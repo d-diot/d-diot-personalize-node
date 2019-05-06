@@ -366,13 +366,13 @@ static void store_keys(void);
 static void print_hex_buffer(uint8_t *data, size_t sz);
 static void print_c_friendly_hex_buffer(uint8_t *data, size_t sz);
 #ifdef STORE_HMAC_KEY
-static bool store_hmac_key_data(uint8_t *data, size_t sz);
+static bool store_hmac_key_data(uint8_t *data);
 #endif
 #ifdef STORE_AES_KEY
-static bool store_aes_key_data(uint8_t *data, size_t sz);
+static bool store_aes_key_data(uint8_t *data);
 #endif
 #ifdef STORE_SOFT_SERIAL
-static bool store_soft_serial_data(uint8_t *data, size_t sz);
+static bool store_soft_serial_data(uint8_t *data);
 #endif
 #ifndef USE_SOFT_SIGNING
 static void init_atsha204a_state(void);
