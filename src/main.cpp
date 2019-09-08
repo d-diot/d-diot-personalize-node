@@ -41,6 +41,7 @@
 #include "sha204_lib_return_codes.h"
 /** @brief Make use of the MySensors framework without invoking the entire system */
 #define MY_CORE_ONLY
+#define MY_BAUD_RATE (9600ul)
 #include <MySensors.h>
 
 /************************************ User defined key data ***************************************/
