@@ -37,6 +37,8 @@
  * This sketch will when executed without modifications also print a guided workflow on the UART.
  */
 
+#include <stdint.h>
+#include <Arduino.h>
 #include "sha204_library.h"
 #include "sha204_lib_return_codes.h"
 /** @brief Make use of the MySensors framework without invoking the entire system */
@@ -99,7 +101,7 @@
  * It is assumed that you have updated @ref MY_HMAC_KEY and @ref MY_AES_KEY with the keys displayed
  * when executing this sketch with @ref GENERATE_KEYS_ATSHA204A or @ref GENERATE_KEYS_SOFT defined.
  */
-#define PERSONALIZE_SOFT
+//#define PERSONALIZE_SOFT
 
 /**
  * @def PERSONALIZE_SOFT_RANDOM_SERIAL
@@ -114,7 +116,7 @@
  *       in EEPROM will be used. If erased (replaced with FF:es) the unique device ID will be used
  *       instead.
  */
-//#define PERSONALIZE_SOFT_RANDOM_SERIAL
+#define PERSONALIZE_SOFT_RANDOM_SERIAL
 
 /*************************** The settings below are for advanced users ****************************/
 /**
